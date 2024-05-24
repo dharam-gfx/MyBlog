@@ -4,18 +4,19 @@ Certainly! Let's create a **readme file** for your React app named **myBlog**. I
 
 # myBlog
 
-Welcome to **myBlog**, a React app for managing blog posts! 🚀
-## View live preview [here](https://myblog-app-v1.netlify.app/)
-## Features
+**Features:**
 
-1. **Login and Logout**: Users can securely log in and out of the app.
-2. **Create Account**: New users can create an account with their credentials.
-3. **Login with Google Account**: Users can also log in using their Google account.
-4. **Create Blog Post**: Authors can write and publish new blog posts.
-5. **Edit Blog**: Authors can update existing blog posts.
-6. **Delete Blog**: Authors can remove blog posts they no longer want.
-7. **Blog Views Count**: Track how many times each blog post has been viewed.
+1. **Login and Logout:** Users can securely log in and out of the app.
+2. **Create Account:** New users can create an account with their credentials.
+3. **Login with Google Account:** Users can also log in using their Google account.
+4. **Create Blog Post:** Authors can write and publish new blog posts.
+5. **Edit Blog:** Authors can update existing blog posts.
+6. **Delete Blog:** Authors can remove blog posts they no longer want.
+7. **Blog Views Count:** Track how many times each blog post has been viewed.
+8. **Forgot Password:** Users can reset their password if they forget it.
+9. **Theme Changer:** Users can customize the app's theme (e.g., light mode, dark mode).
 
+Feel free to let me know if you'd like any further details or if you need assistance with code snippets related to these features! 😊
 ## Installation Process
 
 To get started with **myBlog**, follow these steps:
@@ -62,8 +63,44 @@ Here are the key dependencies used in this project:
 - **react-router-dom**: Enables routing and navigation in your app.
 - **react-toastify**: Provides toast notifications for user feedback.
 
-Feel free to expand upon these dependencies as needed for your specific use case! 😊
+# Blog App Environment Variables
 
----
+This project uses environment variables to configure various settings. Make sure to set these variables appropriately before running your application.
+
+## Available Environment Variables
+
+1. **`VITE_APPWRITE_API_URL`**: The API URL for your Appwrite instance. Set this to the base URL of your Appwrite server (e.g., `https://cloud.appwrite.io/v1`).
+
+2. **`VITE_APPWRITE_PROJECT_ID`**: Your Appwrite project ID. You can find this in your Appwrite dashboard.
+
+3. **`VITE_APPWRITE_DATABASE_ID`**: The ID of the database collection where your blog posts are stored.
+
+4. **`VITE_APPWRITE_COLLECTION_ID`**: The ID of the collection where your blog posts are stored (if different from the database).
+
+5. **`VITE_APPWRITE_POST_VIEW_COUNT_COLLECTION_ID`**: The ID of the collection to track blog post views (if applicable).
+
+6. **`VITE_APPWRITE_BUCKET_ID`**: The ID of the storage bucket for media files (if using Appwrite storage).
+
+7. **`VITE_TINYMCE_API_KEY`**: Your TinyMCE API key for integrating the rich text editor (if applicable).
+
+## How to Use
+
+1. Create a `.env` file in the root of your project.
+2. Add the environment variables mentioned above with their corresponding values.
+3. Make sure your application reads these variables during runtime (e.g., using `process.env.VARIABLE_NAME` in JavaScript).
+
+## Example .env File
+
+```env
+VITE_APPWRITE_API_URL=https://cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT_ID=your-project-id
+VITE_APPWRITE_DATABASE_ID=your-database-id
+VITE_APPWRITE_COLLECTION_ID=your-collection-id
+VITE_APPWRITE_POST_VIEW_COUNT_COLLECTION_ID=views-collection-id
+VITE_APPWRITE_BUCKET_ID=your-bucket-id
+VITE_TINYMCE_API_KEY=your-tinymce-api-key
+```
+
+Remember to replace the placeholders (`your-project-id`, `your-database-id`, etc.) with your actual values.
 
 Remember to update the readme with any additional information relevant to your project. Happy coding! 🎉
