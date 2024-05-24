@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    color: #1d4ed8 !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: silver;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1d4ed8;
+    border-radius: 10px;
+}
+.border-red-300{
+    border-color: red;
+}
+.browser-css * {
+    all: revert;
+}
+.browser-css pre{
+    color: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: rgb(56, 58, 71);
+    white-space: pre-line;
+}
