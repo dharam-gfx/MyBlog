@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 import authService from '../appwrite/Auth';
+import { useNavigate } from 'react-router-dom';
 const About = () => {
   const [userDetails, setUserDetails] = useState( {
     name: "Please Wait...",
@@ -8,6 +9,8 @@ const About = () => {
     phone: 'Please Wait...',
     address: 'Please Wait...',
   } )
+
+  const navigate = useNavigate()
   useEffect( () => {
     getUser();
   }, [] )
@@ -15,9 +18,11 @@ const About = () => {
   async function getUser() {
 
     await authService.getCurrentUser().then( user => {
-      setUserDetails( user )
+      if(user) setUserDetails( user );
+      else  navigate("/login")
     } ).catch( error => {
       console.log( "getCurrentUser", error );
+      navigate("/login")
 
     } )
 
