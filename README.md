@@ -5,7 +5,7 @@ Certainly! Let's create a **readme file** for your React app named **myBlog**. I
 # myBlog
 
 Welcome to **myBlog**, a React app for managing blog posts! 🚀
-
+## View live preview [here](https://myblog-app-v1.netlify.app/)
 ## Features
 
 1. **Login and Logout**: Users can securely log in and out of the app.
