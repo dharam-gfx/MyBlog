@@ -58,6 +58,7 @@ Here are the key dependencies used in this project:
 - **react-redux**: Connects React components to the Redux store.
 - **react-router-dom**: Enables routing and navigation in your app.
 - **react-toastify**: Provides toast notifications for user feedback.
+- **Tailwind CSS**: A utility-first CSS framework that helps you build responsive and efficient designs.
 
 # Blog App Environment Variables
 
