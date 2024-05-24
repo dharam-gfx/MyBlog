@@ -32,7 +32,7 @@ export default function TinyEditor( { name, control, label, defaultValue = "", r
 
                 render={( { field: { onChange } } ) => (
                     <Editor
-                        apiKey='zd46yhs2t1wqn9ae4cvap2fvx0ot7z4pjxlfoe1sy388ajg0'
+                        apiKey={import.meta.env.VITE_TINYMCE_API_KEY}
                         initialValue={defaultValue}
                         init={{
                             initialValue: defaultValue,
