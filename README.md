@@ -1,5 +1,5 @@
 # myBlog
-
+## View live preview [here](https://myblog-app-v1.netlify.app)
 **Features:**
 
 1. **Login and Logout:** Users can securely log in and out of the app.
