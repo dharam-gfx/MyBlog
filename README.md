@@ -23,7 +23,7 @@ To get started with **myBlog**, follow these steps:
 1. **Navigate to Your Project Directory**:
    - Change into the newly created project directory:
      ```bash
-     cd my-react-app
+     cd myBlog
      ```
 
 2. **Install Dependencies**:
@@ -44,7 +44,7 @@ To run your app locally, use the following command:
 npm run dev
 ```
 
-This will start the development server, and you can access your app at [http://localhost:3000](http://localhost:3000).
+This will start the development server, and you can access your app at [http://localhost:5173](http://localhost:5173).
 
 ## Dependencies
 
